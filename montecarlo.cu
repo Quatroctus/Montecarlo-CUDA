@@ -151,7 +151,7 @@ int main(int argc, char* args[]) {
         hitCount += (double) ((int) hits[i]);
     }
 
-    fprintf(stderr, "%d, %llu, %.4lf, %.4lf\n", blockSize, length, megaTrials, (hitCount / (double) length) * 100.);
+    fprintf(stderr, "%d, %lu, %.4lf, %.4lf\n", blockSize, length, megaTrials, (hitCount / (double) length) * 100.);
 
     delete[] trials;
     delete[] hits;
